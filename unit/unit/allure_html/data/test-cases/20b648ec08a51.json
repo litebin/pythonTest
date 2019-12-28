@@ -1,0 +1,62 @@
+{
+  "uid" : "20b648ec08a51",
+  "name" : "test_div[66.72-11.12-6]",
+  "fullName" : "test_div#test_div",
+  "historyId" : "63d36f3977ebe023977ddea62e780227",
+  "time" : {
+    "start" : 1577288635886,
+    "stop" : 1577288635887,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "happy"
+  }, {
+    "name" : "suite",
+    "value" : "test_div"
+  }, {
+    "name" : "host",
+    "value" : "WIN-1GF9INK28GB"
+  }, {
+    "name" : "thread",
+    "value" : "16508-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_div"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "number1",
+    "value" : "66.72"
+  }, {
+    "name" : "number2",
+    "value" : "11.12"
+  }, {
+    "name" : "result",
+    "value" : "6"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "happy" ]
+  },
+  "source" : "20b648ec08a51.json",
+  "parameterValues" : [ "66.72", "11.12", "6" ]
+}

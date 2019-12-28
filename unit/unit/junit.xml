@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="WIN-1GF9INK28GB" name="pytest" skipped="0" tests="9" time="0.297" timestamp="2019-12-25T23:43:55.712267"><testcase classname="test_div" file="test_div.py" line="27" name="test_div[10-2-5]" time="0.037"></testcase><testcase classname="test_div" file="test_div.py" line="27" name="test_div[10-3-3.3333333333333335]" time="0.008"></testcase><testcase classname="test_div" file="test_div.py" line="27" name="test_div[-10--2-5]" time="0.008"></testcase><testcase classname="test_div" file="test_div.py" line="27" name="test_div[-10-5--2]" time="0.009"></testcase><testcase classname="test_div" file="test_div.py" line="27" name="test_div[100000000-1-100000000]" time="0.009"></testcase><testcase classname="test_div" file="test_div.py" line="27" name="test_div[2-20000-0.0001]" time="0.008"></testcase><testcase classname="test_div" file="test_div.py" line="27" name="test_div[66.72-11.12-6]" time="0.008"></testcase><testcase classname="test_div" file="test_div.py" line="27" name="test_div[0-200-0]" time="0.008"></testcase><testcase classname="test_div" file="test_div.py" line="27" name="test_div[100-0-0]" time="0.009"><failure message="ZeroDivisionError: division by zero">number1 = 100, number2 = 0, result = 0
+
+    @pytest.mark.happy
+    @pytest.mark.parametrize(&quot;number1,number2,result&quot;, [
+        (10, 2, 5),
+        (10, 3, 3.3333333333333335),
+        (-10, -2, 5),
+        (-10, 5, -2),
+        (100000000, 1, 100000000),
+        (2, 20000, 0.0001),
+        (66.72, 11.12, 6),
+        (0, 200, 0),
+        (100, 0, 0),
+    
+    ])
+    def test_div(number1, number2, result):
+&gt;       assert div(number1, number2) == result
+
+test_div.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = 100, b = 0
+
+    def div(a, b):
+&gt;       return a / b
+E       ZeroDivisionError: division by zero
+
+test_div.py:5: ZeroDivisionError</failure></testcase></testsuite></testsuites>

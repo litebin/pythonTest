@@ -1,0 +1,68 @@
+{
+  "uid" : "3f5bfaeecdfdb26",
+  "name" : "test_div[100-0-0]",
+  "fullName" : "test_div#test_div",
+  "historyId" : "148afbd30a59091a0eb913dc6c4fdabb",
+  "time" : {
+    "start" : 1577288635912,
+    "stop" : 1577288635913,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "ZeroDivisionError: division by zero",
+  "statusTrace" : "number1 = 100, number2 = 0, result = 0\n\n    @pytest.mark.happy\n    @pytest.mark.parametrize(\"number1,number2,result\", [\n        (10, 2, 5),\n        (10, 3, 3.3333333333333335),\n        (-10, -2, 5),\n        (-10, 5, -2),\n        (100000000, 1, 100000000),\n        (2, 20000, 0.0001),\n        (66.72, 11.12, 6),\n        (0, 200, 0),\n        (100, 0, 0),\n    \n    ])\n    def test_div(number1, number2, result):\n>       assert div(number1, number2) == result\n\ntest_div.py:42: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\na = 100, b = 0\n\n    def div(a, b):\n>       return a / b\nE       ZeroDivisionError: division by zero\n\ntest_div.py:5: ZeroDivisionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "happy"
+  }, {
+    "name" : "suite",
+    "value" : "test_div"
+  }, {
+    "name" : "host",
+    "value" : "WIN-1GF9INK28GB"
+  }, {
+    "name" : "thread",
+    "value" : "16508-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_div"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "number1",
+    "value" : "100"
+  }, {
+    "name" : "number2",
+    "value" : "0"
+  }, {
+    "name" : "result",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "happy" ]
+  },
+  "source" : "3f5bfaeecdfdb26.json",
+  "parameterValues" : [ "100", "0", "0" ]
+}
