@@ -1,7 +1,6 @@
-# Author:Pegasus-Yang
-# Time:2019/12/29 18:00
+# Author:xiaobin
+# Time:2020/1/3 18:00
 import time
-
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
