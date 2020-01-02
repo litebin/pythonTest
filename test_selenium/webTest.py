@@ -10,6 +10,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
+# 进入testerhome，访问社团，访问霍格沃兹测试学院，访问最顶部的第一个帖子。把代码贴到回复里。
 class Testtesterhomework():
     def setup_method(self, method):
         self.driver = webdriver.Chrome()
