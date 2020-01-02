@@ -6,7 +6,7 @@ import pytest
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-#进入testerhome，访问MTSC2020置顶帖，点击目录，点击议题征集范围。把代码贴到回复里。
+#进入testerhome，访问MTSC2020置顶帖，点击目录，点击议题征集范围。把代码贴到回复里
 
 class TestTestsele():
 
