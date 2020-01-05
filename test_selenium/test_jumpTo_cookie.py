@@ -21,9 +21,9 @@ class TestWorkWX:
         url = 'https://work.weixin.qq.com/wework_admin/frame#contacts'
         self.driver.get(url)
         cookies = {
-            "wwrtx.vst": "HAWGm2WByWNgUd4klA8AMlboFIfVtd4shIqO0RFYiyzHigFet-0taMHs3Zv_ym9X9g_0nAkCCBCBGrWZIMU2HIWTjd8xmQYVch8-ZVjtgQKKawDsE12V8FWtc1Bw1crYwsi2-Y2I8CPpj7SvmHNKJvs6Sm9GwcvCmF2rr1pp4FhT0Mw9fw_pZ8bJx3z39LbA0Ee3uF0S8r7QBoZNa0N4iWUR1ihc_lf4s4J8nFA6dkZU0Ri3WQ3hN4qtW-STRvwTMi-sEOiri2qOWJzaPooDhQ",
-            "wwrtx.d2st": "a3754952",
-            "wwrtx.sid": "fVdwbDnUnCt31o0z5JR4JXfEdRpMB3kpfAWM7BjZJW0xzb2meB0Ab8qY8JMWL13-",
+            "wwrtx.vst": "2MRo_7ZsVG8p0HKhl7-I5h-Guis6glWrsbNWk-eYEIPjysa05GFPAsMztP_6GUxnuk2nk--PPGcE1tHMZh5eyfjMdV_lIHoAj3QT41kRUadL67tdn52eWWL4-L9l7PKFTDX0LS5CEC7IZtI6TbJjR6vYluJo6CzeAqf11oudjZzSElOO6qShAFFjQhY5MCc7s1i8EK_N6mp8SqAiSDb0-nrWLGdadlyqODM2WtC2isUi1Oh0ilN87y3k8ALzzy--wCaeFF-UKamFMiyH6JCkyQ",
+            "wwrtx.d2st": "a1885006",
+            "wwrtx.sid": "fVdwbDnUnCt31o0z5JR4JXSJ2ttIjOV0A-Iu4XQBijjlmGueg_TJeuySSuFRXqcC",
             "wwrtx.ltype": "1",
             "wxpay.corpid": "1970325079096544",
             "wxpay.vid": "1688849993369363",
@@ -33,8 +33,8 @@ class TestWorkWX:
         self.driver.get(url)
 
     # 每个测试用例执行完毕之后调用的方法，进行退出操作
-    def teardown_method(self):
-        self.driver.quit()
+    # def teardown_method(self):
+    #     self.driver.quit()
 
     # 添加成员页面的填写成员信息
     def test_add_member(self):
