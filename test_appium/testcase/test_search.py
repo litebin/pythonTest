@@ -7,7 +7,6 @@ from test_appium.page.app import App
 class TestSearch:
     def setup(self):
         self.main = App().start().main()
-
     def test_search(self):
         print(self.main)
         # assert self.main.goto_search_page("alibaba").get_price("BABA") > 200

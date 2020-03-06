@@ -15,7 +15,6 @@ class Search(BasePage):
         self._params={}
         self._params["key"]=key
         self.steps("../page/search.yaml")
-
         return self
 
     def get_price(self, key: str) -> float:
