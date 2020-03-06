@@ -12,24 +12,26 @@ class App(BasePage):
     _activity2 = ".view.WelcomeActivityAlias"
 
     def start(self):
-            caps = {}
-            caps["platformName"] = "android"
-            caps["deviceName"] = "hogwarts"
-            caps["appPackage"] = self._package2
-            caps["appActivity"] = self._activity2
-            caps["noReset"] = True
-            # caps["dontStopAppOnReset"] = True
-            # caps["unicodeKeyboard"] = True
-            # caps["resetKeyboard"] = True
-            # caps["skipServerInstallation"] = True
-            # caps["chromedriverExecutableDir"]="/Users/seveniruby/projects/chromedriver/all"
-            caps["chromedriverExecutable"] = r"D:\myDriver\2.20\chromedriver.exe"
+        caps = {}
+        caps["platformName"] = "android"
+        caps["deviceName"] = "hogwarts"
+        caps["appPackage"] = self._package2
+        caps["appActivity"] = self._activity2
+        caps["noReset"] = True
+        # caps["dontStopAppOnReset"] = True
+        # caps["unicodeKeyboard"] = True
+        # caps["resetKeyboard"] = True
+        # caps["skipServerInstallation"] = True
+        # caps["chromedriverExecutableDir"]="/Users/seveniruby/projects/chromedriver/all"
+        caps["chromedriverExecutable"] = r"D:\myDriver\2.20\chromedriver.exe"
 
-            # caps['avd'] = 'Pixel_2_API_23'
+        # caps['avd'] = 'Pixel_2_API_23'
 
-            self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
-            self.driver.implicitly_wait(30)
-            return self
+        self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
+        self.driver.implicitly_wait(30)
+        return self
+
+
 
     # def start(self):
     #     return self
