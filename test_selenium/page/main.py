@@ -12,8 +12,9 @@ class Main(BasePage):
         pass
 
     def import_user(self, path):
-        self.find((By.PARTIAL_LINK_TEXT, "导入成员")).click()
-        self.find((By.LINK_TEXT, "批量导入")).click()
+        # self.find((By.PARTIAL_LINK_TEXT, "导入成员")).click()
+        # self.find((By.LINK_TEXT, "批量导入")).click()
+        self.find(By.CSS_SELECTOR,".ww_indexImg.ww_indexImg_Import").click()
         self.find(By.ID, "js_upload_file_input").send_keys(path)
         self.find((By.ID, "submit_csv")).click()
         self.find((By.ID, "reloadContact")).click()
