@@ -1,3 +1,5 @@
+import os
+
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 
@@ -9,13 +11,16 @@ class TestAppium:
         caps["deviceName"] = "hogwarts"
         caps["appPackage"] = "com.xueqiu.android"
         caps["appActivity"] = ".view.WelcomeActivityAlias"
-        self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
+        caps["noReset"] = True
+
+
+        # self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         self.driver.implicitly_wait(20)
 
     def test_search_hk_price(self):
         stock_locator = (MobileBy.XPATH, "//*[contains(@resource-id, 'title_container')]/*[@text='股票']")
         price_locator = (MobileBy.XPATH, "//*[@text='09988']/../../..//*[contains(@resource-id, 'current_price')]")
-        # self.driver.find_element(MobileBy.ID, "tv_agree").click()
+        self.driver.find_element(MobileBy.ID, "tv_agree").click()
         self.driver.find_element(MobileBy.ID, "tv_search").click()
         self.driver.find_element(MobileBy.ID, "search_input_text").send_keys("阿里巴巴")
         self.driver.find_element(MobileBy.ID, "name").click()

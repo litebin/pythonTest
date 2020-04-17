@@ -14,10 +14,11 @@ class TestXueqiu:
         caps["deviceName"] = "hogwarts"
         caps["appPackage"] = "com.xueqiu.android"
         caps["appActivity"] = ".view.WelcomeActivityAlias"
-        caps["noReset"] = True
-        caps["dontStopAppOnReset"] = True
-        caps["unicodeKeyboard"] = True
-        caps["resetKeyboard"] = True
+        caps[' newCommandTimeout'] = '3000'
+        # caps["noReset"] = True
+        # caps["dontStopAppOnReset"] = True
+        # caps["unicodeKeyboard"] = True
+        # caps["resetKeyboard"] = True
 
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         self.driver.implicitly_wait(20)
@@ -59,6 +60,6 @@ class TestXueqiu:
         self.driver.unlock()
 
     def teardown(self):
-        pass
+        # pass
         # sleep(20)
-        # self.driver.quit()
+        self.driver.quit()

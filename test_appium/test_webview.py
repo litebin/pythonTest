@@ -42,6 +42,7 @@ class TestWebview:
         # self.driver.find_element(MobileBy.ID, "tv_agree").click()
         self.driver.find_element(By.XPATH, "//*[@text='交易']").click()
         self.driver.find_element(MobileBy.ACCESSIBILITY_ID, "港美股开户").click()
+
         # for i in range(5):
         #     print(self.driver.contexts)
         #     sleep(0.5)
